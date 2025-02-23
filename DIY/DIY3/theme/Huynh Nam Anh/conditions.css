@@ -1,0 +1,24 @@
+section.terms {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.terms h2 {
+    color: #ef7039;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+section.terms ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+section.terms p,
+section.terms ul {
+    margin: 10px 0;
+}

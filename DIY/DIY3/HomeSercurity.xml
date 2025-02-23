@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE DIYParadise [
+    <!ELEMENT DIYParadise (Category+)>
+    <!ELEMENT Category (CategoryName, Product+)>
+    <!ELEMENT CategoryName (#PCDATA)>
+    <!ELEMENT Product (ProductName, Description, Price, Tag, Review)>
+    <!ELEMENT ProductName (#PCDATA)>
+    <!ELEMENT Description (#PCDATA)>
+    <!ELEMENT Price (#PCDATA)>
+    <!ELEMENT Tag (#PCDATA)>
+    <!ELEMENT Review (#PCDATA)>
+]>
+<DIYParadise>
+    <Category>
+        <CategoryName>Home Sercurity</CategoryName>
+
+        <Product>
+            <ProductName>Padlock</ProductName>
+            <Description>High-security padlock with a hardened steel shackle and precision locking mechanism</Description>
+            <Price>$5,000.00 AUD</Price>
+            <Tag>Sercurity</Tag>
+            <Review>4 Stars</Review>
+        </Product>
+
+        <Product>
+            <ProductName>Sercurity Camera</ProductName>
+            <Description>Advanced security camera with high-definition resolution and night vision capabilities</Description>
+            <Price>$6,000.00 AUD</Price>
+            <Tag>Security</Tag>
+            <Review>5 Stars</Review>
+        </Product>
+
+        <Product>
+            <ProductName>Alarm</ProductName>
+            <Description>Perfect for enhancing security and alerting you to potential threats</Description>
+            <Price>$8,000.00 AUD</Price>
+            <Tag>Security</Tag>
+            <Review>3 Stars</Review>
+        </Product>
+
+        <Product>
+            <ProductName>Peephole</ProductName>
+            <Description>Allowing you to see who’s outside your door clearly and easily without opening it.</Description>
+            <Price>$7,000.00 AUD</Price>
+            <Tag>Security</Tag>
+            <Review>3 Stars</Review>
+        </Product>
+
+    </Category>
+</DIYParadise>

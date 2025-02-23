@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+
+    <!------------------------------------------------ LINKS START -------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./theme/Huynh Nam Anh/style.css">
+    <link rel="stylesheet" href="./theme/Huynh Nam Anh/contact.css">
+<!------------------------------------------------ LINKS END -------------------------------------------------->
+
+</head>
+<body>
+<!------------------------------------------------ HEADER START -------------------------------------------------->
+<header>
+    <div class="row">
+        <section id="header">
+
+            <a href="./index.html">
+                <img src="./theme/Huynh Nam Anh/images/logo.png" alt="logo image">
+            </a>
+
+            <div>
+                <ul>
+                    <li><a href="./index.html">HOME PAGE</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./privacyPolicy.html">PRIVACY POLICY</a></li>
+                    <li><a href="./Terms.html">TERMS AND CONDITIONS</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</header>
+<!------------------------------------------------ HEADER END ---------------------------------------------------->
+
+<!-- CONTENT START  -->
+<div class="container">
+    <div class="contact-section">
+        <div class="contact-image">
+            <img src="./asset/img/Contact.png" alt="Contact Us">
+        </div>
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <form action="#" method="post" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">What's your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label>Is this message urgent?</label>
+                    <div class="quest">
+                        <div>
+                            <input type="radio" id="urgentYes" name="urgent" value="yes" required>
+                            <label for="urgentYes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="urgentNo" name="urgent" value="no" required>
+                            <label for="urgentNo">No</label>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- CONTENT END  -->
+
+<script>
+    function validateForm() {
+        const form = document.querySelector('form');
+        return form.checkValidity();
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------ FOOTER START ------------------------------------------------>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-left">
+			<a href="./index.html">
+				<img src="./asset/img/logo.png" alt="logo image">
+			</a>
+			<h3>DIY STORE</h3>
+			<p>DIY Furniture: Your Hands, Your Vision, Your Space.</p>
+		</div>
+		<div class="footer-center">
+			<h4>LINKS</h4>
+			<ul>
+				<li><a href="./about.html">About us</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+				<li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+				<li><a href="./Terms.html">Terms and Conditions</a></li>
+			</ul>
+		</div>
+		<div class="footer-right">
+			<h4>Follow Us</h4>
+			<div class="social-icons">
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p>&copy; 2024 DIY - Do It Yourself. All rights reserved.</p>
+		<p>&copy; Huynh Nam Anh Duong, 3400219, c3400219@uon.edu.au, Bachelor of IT.</p>
+	</div>
+</footer>
+<!------------------------------------------------ FOOTER END ------------------------------------------------>
+</body>
+</html>

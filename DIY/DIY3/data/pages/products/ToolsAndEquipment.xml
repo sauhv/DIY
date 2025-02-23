@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE DIYParadise [
+    <!ELEMENT DIYParadise (Category+)>
+    <!ELEMENT Category (CategoryName, Product+)>
+    <!ELEMENT CategoryName (#PCDATA)>
+    <!ELEMENT Product (ProductName, Description, Price, Tag, Review)>
+    <!ELEMENT ProductName (#PCDATA)>
+    <!ELEMENT Description (#PCDATA)>
+    <!ELEMENT Price (#PCDATA)>
+    <!ELEMENT Tag (#PCDATA)>
+    <!ELEMENT Review (#PCDATA)>
+]>
+<DIYParadise>
+    <Category>
+        <CategoryName>Tools and Equipments</CategoryName>
+
+        <Product>
+            <ProductName>Hammer</ProductName>
+            <Image> 
+                <src>handtool_1.jpg</src>
+                <alt>handtool_1.jpg</alt>
+            </Image>
+            <Description> Premium hammer with a high-carbon steel head and ergonomic handle</Description>
+            <Price>$3,000.00 AUD</Price>
+            <Tag>Hand Tools</Tag>
+            <Review>3 Stars</Review>
+        </Product>
+
+        <Product>
+            <ProductName>Screw Driver</ProductName>
+            <Image> 
+                <src>handtool_2.jpg</src>
+                <alt>handtool_2.jpg</alt>
+            </Image>
+            <Description>Ideal for a wide range of tasks, from assembly to repairs</Description>
+            <Price>$2,000.00 AUD</Price>
+            <Tag>Hand Tools</Tag>
+            <Review>5 Stars</Review>
+        </Product>
+
+        <Product>
+            <ProductName>Plier</ProductName>
+            <Image> 
+                <src>handtool_3.png</src>
+                <alt>handtool_3.png</alt>
+            </Image>
+            <Description>An essential tool for any toolbox or workshop.</Description>
+            <Price>$3,000.00 AUD</Price>
+            <Tag>Hand Tools</Tag>
+            <Review>3 Stars</Review>
+        </Product>
+
+        <Product>
+            <ProductName>Socket</ProductName>
+            <Image> 
+                <src>handtool_4.png</src>
+                <alt>handtool_4.png</alt>
+            </Image>
+            <Description>Ideal for safely powering and protecting your electronic devices and appliances</Description>
+            <Price>$4,000.00 AUD</Price>
+            <Tag>Hand Tools</Tag>
+            <Review>4 Stars</Review>
+        </Product>
+
+    </Category>
+</DIYParadise>

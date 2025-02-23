@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+
+<!------------------------------------------------ LINKS START -------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./theme/Huynh Nam Anh/style.css">
+<!------------------------------------------------ LINKS END -------------------------------------------------->
+	<script>
+		//Javascript here
+		//This annoying function update the price put in the data collection thingy that I am too stupid to understand, sorry Adrian😭
+		function updatePriceCategory(){
+			var price= document.getElementById('money').value;
+			console.log(price);
+			if (price < 0){
+				document.getElementById('money').value = 0;
+				price = 0;
+			}
+			if (price == 0){
+				document.getElementById('displayprice').innerHTML = 'Free';
+			}
+			else if (price < 25){
+				document.getElementById('displayprice').innerHTML = 'Cheap';	
+			}
+			else if (price <= 100){
+				document.getElementById('displayprice').innerHTML = 'Affordable';	
+			}
+			else if (price >100){
+				document.getElementById('displayprice').innerHTML = 'Expensive';
+			}
+		}
+		//Add search tags and delete tags
+		function addSearchTag() {
+			const searchTagValue = document.getElementById('searchTag').value;
+			const displayTag = document.getElementById('displayTag');
+			
+			const li = document.createElement('li');
+			li.innerHTML = searchTagValue;  
+			
+			const deleteButton = document.createElement('button');
+			deleteButton.textContent = 'Delete Tag';
+			deleteButton.type = 'button';
+			deleteButton.classList.add('delete-tag');
+			deleteButton.onclick = function() { deleteSearchTag(li); };		
+			li.appendChild(deleteButton);
+			displayTag.appendChild(li);
+			console.log(searchTagValue);
+			updateDeleteButtonsVisibility();
+		}
+		function deleteSearchTag(item){
+			item.remove();
+			console.log('Tag Deleted');
+			updateDeleteButtonsVisibility();
+		}
+		function updateDeleteButtonsVisibility() {
+			const displayTag = document.getElementById('displayTag');
+			const deleteButtons = displayTag.getElementsByClassName('delete-tag');
+			
+			if (deleteButtons.length === 1) {
+				deleteButtons[0].style.display = 'none';
+			} else {
+				Array.from(deleteButtons).forEach(button => {
+					button.style.display = 'inline-block';
+				});
+			}
+		}
+		// Check review format and Add 5 stars
+		function checkReviewFormat(){
+			var regex = /(?:^|\s)(0(\.\d)?|[1-4](\.\d)?|5(\.0)?)(?:\s)out of 5(?:\s|$)/;
+			if (document.getElementById('review').value == ""|| document.getElementById('review').value.match(regex)){
+			console.log('review good');
+			}
+			else{
+			console.log('WRONG TRY AGAIN');
+			}
+		
+		
+		}
+	</script>
+</head>
+<body>
+<!------------------------------------------------ HEADER START -------------------------------------------------->
+    <header>
+        <div class="row">
+            <section id="header">
+
+                <a href="./index.html">
+                    <img src="./asset/img/logo.png" alt="logo image">
+                </a>
+    
+                <div>
+                    <ul>
+                        <li><a href="./index.html">HOME PAGE</a></li>
+                        <li><a href="./about.html">ABOUT US</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                        <li><a href="./privacyPolicy.html">PRIVACY POLICY</a></li>
+                        <li><a href="./Terms.html">TERMS AND CONDITIONS</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </header>
+<!------------------------------------------------ HEADER END ---------------------------------------------------->
+
+<!------------------------------------------------ CONTENT START
+---------------------------------------------------->
+<body>
+	<h1>DATA COLLECTION</h1>
+	<form>
+		<label for="FName">*First Name:</label>
+		<input type='text' id='FName' name='FName' required>
+		<label for="LName">*Last Name:</label>
+		<input type='text' id='LName' name='LName' required>
+		<br>
+		<label for="Email">*Email:</label>
+		<input type='email' id='Email' name='Email' required>
+		<br>
+		<h3>Have you submitted a product before:</h3>
+		<input type='radio' id='yes' name='binary'>
+		<label for="Yes">Yes</label>
+		<input type='radio' id='no' name='binary'>
+		<label for="No">No</label>
+		<br>
+		<label for="category">*Choose your category:</label>
+		<select id="category" name="category" required>
+		  <option value="Home Sercurity">Home Sercurity</option>
+		  <option value="Tools and Equipments">Tools and Equipments</option>
+		</select>
+		<br>
+		<input type="checkbox" id="tos" name="tos" value="yes">
+		<label for="tos">I have read the terms and conditions.</label>
+		<br>
+		<label for="review">Review product:</label>
+		<textarea id="review" name="review" rows="5" cols= "5" placeholder="Enter Review..." onchange="checkReviewFormat()" ></textarea>
+		<br>
+		<label for="money">Price:</label>
+		<input type='number' id='money' name='money' step='0.01' min='0' onchange='updatePriceCategory()' required>
+		<div>
+			<p id="displayprice">
+			</p>
+		</div>
+		<label for="searchTag">Search Tags:</label>
+		<input type="text" id = "searchTag" name = "searchTag">
+		<ol id="displayTag">
+			
+		</ol>
+		<button id='addtag' onclick = "addSearchTag()" type ='button'>Add Tag</button>
+		
+	</form>
+	
+	
+	
+	
+	
+	
+</body>
+
+
+<!------------------------------------------------ CONTENT END
+---------------------------------------------------->
+
+<!------------------------------------------------ FOOTER START ------------------------------------------------>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-left">
+				<a href="./index.html">
+					<img src="./asset/img/logo.png" alt="logo image">
+				</a>
+				<h3>DIY STORE</h3>
+				<p>DIY Furniture: Your Hands, Your Vision, Your Space.</p>
+			</div>
+			<div class="footer-center">
+				<h4>LINKS</h4>
+				<ul>
+					<li><a href="./about.html">About us</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+					<li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+					<li><a href="./Terms.html">Terms and Conditions</a></li>
+				</ul>
+			</div>
+			<div class="footer-right">
+				<h4>Follow Us</h4>
+				<div class="social-icons">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2024 DIY - Do It Yourself. All rights reserved.</p>
+			<p>&copy; Huynh Nam Anh Duong, 3400219, c3400219@uon.edu.au, Bachelor of IT.</p>
+		</div>
+	</footer>
+<!------------------------------------------------ FOOTER END ------------------------------------------------>
+
+
+</body>
+</html>

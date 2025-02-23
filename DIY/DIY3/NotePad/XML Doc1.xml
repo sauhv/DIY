@@ -1,0 +1,33 @@
+<DIYParadise>
+<Category>
+<CategoryName>Tools and Equipments</CategoryName>
+<Product>
+<ProductName>Hammer</ProductName>
+<Description> Premium hammer with a high-carbon steel head and ergonomic handle</Description>
+<Price>$3,000.00 AUD</Price>
+<Tag>Hand Tools</Tag>
+<Review>3 Stars</Review>
+</Product>
+<Product>
+<ProductName>Screw Driver</ProductName>
+<Description>Ideal for a wide range of tasks, from assembly to repairs</Description>
+<Price>$2,000.00 AUD</Price>
+<Tag>Hand Tools</Tag>
+<Review>5 Stars</Review>
+</Product>
+<Product>
+<ProductName>Plier</ProductName>
+<Description>An essential tool for any toolbox or workshop.</Description>
+<Price>$3,000.00 AUD</Price>
+<Tag>Hand Tools</Tag>
+<Review>3 Stars</Review>
+</Product>
+<Product>
+<ProductName>Socket</ProductName>
+<Description>Ideal for safely powering and protecting your electronic devices and appliances</Description>
+<Price>$4,000.00 AUD</Price>
+<Tag>Hand Tools</Tag>
+<Review>4 Stars</Review>
+</Product>
+</Category>
+</DIYParadise>

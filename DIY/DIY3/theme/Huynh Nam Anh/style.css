@@ -1,0 +1,273 @@
+/* ---------------------------------------------------Header---------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+body {
+	margin-left: 1cm !IMPORTANT;
+	margin-right: 1cm !IMPORTANT;
+}
+
+a {
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+  }
+
+a:hover { transform: scale(1.1);
+
+}
+
+.row{
+    width: 1200px;  
+    margin: 0 auto;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    background-color: #f07039;
+    padding: 10px 0;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+#header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+#header img {
+    max-height: 250px;
+    max-width: 300px;
+    margin-right: 20px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+#header div {
+    flex: 1;
+}
+#header ul {
+    display: flex;
+    list-style: none;
+}
+
+#header ul li {
+    margin-left: 20px;
+    padding: 0px 50px;
+    text-align: center;
+}
+
+#header ul li a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    transition: color 0.3s;
+}
+
+#header ul li a:visited{
+	color: blue;
+}
+#header ul li a:hover {
+    color: white;
+    font-size: 110%;
+}
+
+#header ul li a:active{
+	color: pink;
+}
+/* ---------------------------------------------------Banner ---------------------------------------------------*/
+.banner {
+    padding-top: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.banner img {
+    width: 100%;
+    height: 450px;
+    display: block;
+    overflow: hidden;
+}
+
+/* ---------------------------------------------------Product ---------------------------------------------------*/
+#products {
+	background-image: url("./images/bg.jpg") !IMPORTANT;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#products .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tittleCat {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tittleCat h3 {
+    font-size: 30px;
+    color: black;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 23%;
+    /* text-align: center; */
+}
+
+.product img {
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin: 5px 0;
+    color: black;
+    font-size: 14px;
+}
+
+.product p:first-child {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+.product .review i{
+    color: gold;
+}
+.product p.name {
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+}
+.product span {
+    font-size: 15px;  
+}
+.product span.tit{
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------Footer ---------------------------------------------------*/
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    position: relative;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left h3{
+    padding-top: 10px;
+}
+
+.footer-left a img {
+    width: 150px;
+    height: auto; 
+    display: block;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 120px;
+}
+
+.footer h3, .footer h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    line-height: 1.6;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center ul li {
+    margin-bottom: 10px;
+}
+
+.footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-center ul li a:hover {
+    color: #f07039;
+	font-size: 110%;
+}
+
+.footer-right {
+    flex: 1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f07039;
+	font-size: 110%;
+}
+
+.footer-bottom {
+    text-align: right;
+    padding-top: 20px;
+    border-top: 1px solid whitesmoke;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+
+
+

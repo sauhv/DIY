@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Paradise</title>
+
+<!------------------------------------------------ LINKS START -------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./theme/Huynh Nam Anh/style.css">
+<!------------------------------------------------ LINKS END -------------------------------------------------->
+
+<!------------------------------------------------JAVASCRIPT START -------------------------------------------------->
+<script>
+  function inflateImage(image, amount) {
+  image.style.transform = `scale(${amount})`;
+}
+
+  function loadProduct(category, product) {
+    window.location.href = `product_template.php?category=${category}&product=${product}`;
+  }
+
+  function createCookie(productName) {
+    document.cookie = `lastProduct=${productName}; path=/`;
+}
+
+  function retrieveCookie() {
+    const cookie = `; ${document.cookie}`;
+    const cookie_array = cookie.split(`; lastProduct=`);
+    if (cookie_array.length === 2) return cookie_array.pop().split(';').shift();
+}
+</script>
+<!------------------------------------------------JAVASCRIPT END -------------------------------------------------->
+
+</head>
+<body>
+<!------------------------------------------------ HEADER START -------------------------------------------------->
+    <header>
+        <div class="row">
+            <section id="header">
+
+                <a href="./index.html">
+                    <img src="./theme/Huynh Nam Anh/images/logo.png" alt="logo image">
+                </a>
+    
+                <div>
+                    <ul>
+                        <li><a href="./index.html">HOME PAGE</a></li>
+                        <li><a href="./about.html">ABOUT US</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                        <li><a href="./privacyPolicy.html">PRIVACY POLICY</a></li>
+                        <li><a href="./Terms.html">TERMS AND CONDITIONS</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </header>
+<!------------------------------------------------ HEADER END ---------------------------------------------------->
+
+
+
+<!------------------------------------------------ PRODUCTS START ------------------------------------------------>
+<div class="banner">
+    <img src="./theme/Huynh Nam Anh/images/banner.png" alt="">
+</div>
+
+<section id="products">
+    <div class="container">
+        <div class="tittleCat">
+            <h3>TOOLS AND EQUIPMENT</h3>
+        </div>
+        
+        <div class="row1">
+            <div class="product">
+                 <img src="./data/uploads/handtool_1.jpg" alt="Hammer" onclick="loadProduct('ToolsAndEquipment', 'Hammer'); createCookie('Hammer')" onmouseover="inflateImage(this, 1.04)" onmouseout="inflateImage(this, 1)">
+                 <p class="name"><a href="http://diy/product_template.php?category=ToolsAndEquipment&product=Hammer">HAMMER</a></p>
+                <p><span class="tit">DECRIPTION: </span>Premium hammer with a high-carbon steel head and ergonomic handle</p>
+                <p><span class="tit">PRICE: </span> $1,000.00 AUD </p>
+                <p><span class="tit">TAG: </span> Hand Tools </p>
+                <p class="review"><span class="tit">REVIEW</span> :
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./data/uploads/handtool_2.jpg" alt="Screwdriver" onclick="loadProduct('ToolsAndEquipment', 'Screwdriver'); createCookie('Screwdriver')" onmouseover="inflateImage(this, 1.04)" onmouseout="inflateImage(this, 1)">
+                <p class="name"><a href="http://diy/product_template.php?category=ToolsAndEquipment&product=Screwdriver">SCREWDRIVER</a></p>
+                <p><span class="tit">DECRIPTION: </span>Ideal for a wide range of tasks, from assembly to repairs</p>
+                <p><span class="tit">PRICE: </span> $2,000.00 AUD </p>
+                <p><span class="tit">TAG: </span> Hand Tools </p>
+                <p class="review"><span class="tit">REVIEW</span> :
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./data/uploads/handtool_3.png" alt="Pliers" onclick="loadProduct('ToolsAndEquipment', 'Pliers'); createCookie('Pliers')" onmouseover="inflateImage(this, 1.04)" onmouseout="inflateImage(this, 1)">
+                <p class="name"><a href="http://diy/product_template.php?category=ToolsAndEquipment&product=Pliers">PLIERS</a></p>
+                <p><span class="tit">DECRIPTION: </span>An essential tool for any toolbox or workshop.</p>
+                <p><span class="tit">PRICE: </span> $3,000.00 AUD </p>
+                <p><span class="tit">TAG: </span> Hand Tools </p>
+                <p class="review"><span class="tit">REVIEW</span> :
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./data/uploads/handtool_4.png" alt="Electrical Socket" onclick="loadProduct('ToolsAndEquipment', 'Socket'); createCookie('Socket')" onmouseover="inflateImage(this, 1.04)" onmouseout="inflateImage(this, 1)">
+                <p class="name"><a href="http://diy/product_template.php?category=ToolsAndEquipment&product=Socket">ELECTRICAL SOCKET</a></p>
+                <p><span class="tit">DECRIPTION: </span>Ideal for safely powering and protecting your electronic devices and appliances</p>
+                <p><span class="tit">PRICE: </span> $4,000.00 AUD </p>
+                <p><span class="tit">TAG: </span> Electrical Equipment </p>
+                <p class="review"><span class="tit">REVIEW</span> :
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="products">
+    <div class="container">
+        <div class="tittleCat">
+            <h3>HOME SECURITY</h3>
+        </div>
+        
+        <div class="row1">
+            <div class="product">
+                <img src="./data/uploads/security_1.png" alt="Padlock" onclick="loadProduct('HomeSecurity', 'Padlock'); createCookie('Padlock')" onmouseover="inflateImage(this, 1.04)" onmouseout="inflateImage(this, 1)">
+                <p class="name"><a href="http://diy/product_template.php?category=HomeSecurity&product=Padlock">PADLOCK</a></p>
+                <p><span class="tit">DECRIPTION: </span>High-security padlock with a hardened steel shackle and precision locking mechanism</p>
+                <p><span class="tit">PRICE: </span> $5,000.00 AUD </p>
+                <p><span class="tit">TAG: </span>Security</p>
+                <p class="review"><span class="tit">REVIEW</span> :
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./data/uploads/security_2.png" alt="Security Camera" onclick="loadProduct('HomeSecurity', 'Padlock'); createCookie('Padlock')" onmouseover="inflateImage(this, 1.04)" onmouseout="inflateImage(this, 1)">
+                <p class="name"><a href="http://diy/product_template.php?category=HomeSecurity&product=SecurityCamera">SECURITY CAMERA</a></p>
+                <p><span class="tit">DECRIPTION: </span>Advanced security camera with high-definition resolution and night vision capabilities</p>
+                <p><span class="tit">PRICE: </span> $6,000.00 AUD </p>
+                <p><span class="tit">TAG: </span>Security</p>
+                <p class="review"><span class="tit">REVIEW</span> :
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./data/uploads/security_3.png" alt="Alarm" onclick="loadProduct('HomeSecurity', 'Alarm'); createCookie('Alarm')" onmouseover="inflateImage(this, 1.04)" onmouseout="inflateImage(this, 1)">
+                <p class="name"><a href="http://diy/product_template.php?category=HomeSecurity&product=Alarm">ALARM</a></p>
+                <p><span class="tit">DECRIPTION: </span>Perfect for enhancing security and alerting you to potential threats</p>
+                <p><span class="tit">PRICE: </span> $8,000.00 AUD </p>
+                <p><span class="tit">TAG: </span>Security</p>
+                <p class="review"><span class="tit">REVIEW</span> :
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./data/uploads/security_4.png" alt="Peephole" onclick="loadProduct('HomeSecurity', 'Peephole'); createCookie('Peephole')" onmouseover="inflateImage(this, 1.04)" onmouseout="inflateImage(this, 1)">
+                <p class="name"><a href="http://diy/product_template.php?category=HomeSecurity&product=Peephole">PEEPHOLE</a></p>
+                <p><span class="tit">DECRIPTION: </span>Allowing you to see who’s outside your door clearly and easily without opening it.</p>
+                <p><span class="tit">PRICE: </span> $7,000.00 AUD </p>
+                <p><span class="tit">TAG: </span>Security</p>
+                <p class="review"><span class="tit">REVIEW</span> :
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!------------------------------------------------ PRODUCTS  END ------------------------------------------------>
+
+
+
+<!------------------------------------------------ FOOTER START ------------------------------------------------>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-left">
+				<a href="./index.html">
+					<img src="./theme/Huynh Nam Anh/images/logo.png" alt="logo image">
+				</a>
+				<h3>DIY STORE</h3>
+				<p>DIY Furniture: Your Hands, Your Vision, Your Space.</p>
+			</div>
+			<div class="footer-center">
+				<h4>LINKS</h4>
+				<ul>
+					<li><a href="./about.html">About us</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+					<li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+					<li><a href="./Terms.html">Terms and Conditions</a></li>
+				</ul>
+			</div>
+			<div class="footer-right">
+				<h4>Follow Us</h4>
+				<div class="social-icons">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2024 DIY - Do It Yourself. All rights reserved.</p>
+			<p>&copy; Huynh Nam Anh Duong, 3400219, c3400219@uon.edu.au, Bachelor of IT.</p>
+		</div>
+	</footer>
+<!------------------------------------------------ FOOTER END ------------------------------------------------>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+.privacy-policy {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.privacy-policy h2 {
+    color: #ef7039;
+    margin-top: 20px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+}
+
+.privacy-policy p, 
+.privacy-policy ul {
+    margin-bottom: 20px;
+}
+
+.privacy-policy ul {
+    padding-left: 20px;
+}
+
+.privacy-policy ul li {
+    list-style-type: disc;
+}

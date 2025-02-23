@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE DIYParadise [
+    <!ELEMENT DIYParadise (Category+)>
+    <!ELEMENT Category (CategoryName, Product+)>
+    <!ELEMENT CategoryName (#PCDATA)>
+    <!ELEMENT Product (ProductName, Description, Price, Tag, Review)>
+    <!ELEMENT ProductName (#PCDATA)>
+    <!ELEMENT Description (#PCDATA)>
+    <!ELEMENT Price (#PCDATA)>
+    <!ELEMENT Tag (#PCDATA)>
+    <!ELEMENT Review (#PCDATA)>
+]>
+<DIYParadise>
+    <Category>
+        <CategoryName>Category_Name</CategoryName>
+
+        <Product>
+            <ProductName>Product_Name</ProductName>
+            <Description>Description_about_product</Description>
+            <Price>Price_of_product</Price>
+            <Tag>Product_tag</Tag>
+            <Review>From_0_to_5_star</Review>
+        </Product>
+    </Category>
+</DIYParadise>
